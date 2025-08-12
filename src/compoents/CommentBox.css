@@ -1,0 +1,62 @@
+/* CommentBox.css */
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.comment-box textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.comment-box textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
+}
+
+.comment-box button {
+  align-self: flex-end;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.comment-box button:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile adjustments */
+@media (max-width: 520px) {
+  .comment-box {
+    padding: 10px;
+  }
+
+  .comment-box textarea {
+    font-size: 0.9rem;
+  }
+
+  .comment-box button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}

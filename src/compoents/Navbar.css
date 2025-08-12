@@ -1,0 +1,53 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 32px;
+  background: #202020;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.auth-section button {
+  margin-left: 10px;
+  padding: 6px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn,
+.register-btn {
+  background: #fff;
+  color: #000;
+}
+
+.profile-btn {
+  background: #555;
+  color: #fff;
+}
+
+.logout-btn {
+  background: crimson;
+  color: #fff;
+}

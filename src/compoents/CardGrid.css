@@ -1,0 +1,58 @@
+/* CardGrid.css */
+
+/* Card container */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+/* Card image */
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #f3f4f6;
+}
+
+/* Card title */
+.card-title {
+  margin: 10px 8px 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Card author */
+.card-author {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Responsive tweak */
+@media (max-width: 520px) {
+  .card-img {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-author {
+    font-size: 0.85rem;
+  }
+}

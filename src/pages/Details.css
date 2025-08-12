@@ -1,0 +1,126 @@
+/* Details.css */
+
+/* Page container */
+.details-page {
+  max-width: 850px;
+  margin: 28px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+}
+
+/* Cover image */
+.details-page img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Headings */
+.details-page h2 {
+  margin: 6px 0 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.details-page h3,
+.details-page h4 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Paragraph text */
+.details-page p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Chapters list */
+.details-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.details-page ul li {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: #f9fafb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.details-page ul li:hover {
+  background: #eef2ff;
+}
+
+/* Actions section */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Action buttons */
+.actions button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.actions button:hover {
+  transform: translateY(-2px);
+}
+
+/* Report button */
+.actions button:first-of-type {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.actions button:first-of-type:hover {
+  background: #ffedd5;
+}
+
+/* Edit button */
+.actions button:nth-of-type(2) {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.actions button:nth-of-type(2):hover {
+  background: #bae6fd;
+}
+
+/* Delete button */
+.actions button:last-of-type {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.actions button:last-of-type:hover {
+  background: #fecaca;
+}
+
+/* Mobile adjustments */
+@media (max-width: 520px) {
+  .details-page {
+    padding: 14px;
+  }
+  
+  .details-page img {
+    max-height: 300px;
+  }
+}

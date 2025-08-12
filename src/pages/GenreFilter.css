@@ -1,0 +1,45 @@
+/* GenreFilter.css */
+
+.genre-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.genre-filter button {
+  background-color: #f3f4f6; /* light gray */
+  color: #374151; /* dark text */
+  border: 1px solid #d1d5db;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.genre-filter button:hover {
+  background-color: #e5e7eb;
+}
+
+.genre-filter button.active {
+  background-color: #2563eb; /* blue */
+  color: white;
+  border-color: #2563eb;
+}
+
+.genre-filter button.active:hover {
+  background-color: #1d4ed8;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 640px) {
+  .genre-filter {
+    justify-content: center;
+  }
+  
+  .genre-filter button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}

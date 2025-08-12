@@ -1,0 +1,52 @@
+/* CommentsList.css */
+
+.comments-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-item {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.comment-item strong {
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.comment-item small {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.comment-item p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #374151;
+}
+
+/* "No comments" text */
+.comments-list > p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 520px) {
+  .comment-item {
+    padding: 8px 10px;
+  }
+
+  .comment-item p {
+    font-size: 0.85rem;
+  }
+}

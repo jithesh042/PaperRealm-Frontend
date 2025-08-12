@@ -1,0 +1,37 @@
+/* MangaList.css */
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 24px 0 16px 8px;
+  color: #2563eb;
+  user-select: none;
+}
+
+/* Container for each section */
+.grid-list, .manhwa-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 0 8px;
+  margin-bottom: 40px;
+}
+
+/* Wrapper div around each item with margin to separate the heading */
+.grid-list > div,
+.manhwa-list > div {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .grid-list, .manhwa-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 4px;
+  }
+}

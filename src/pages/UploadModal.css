@@ -1,0 +1,111 @@
+/* UploadModal.css */
+
+/* Container */
+.form-container {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 20px 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+}
+
+/* Form layout */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Text inputs & textarea */
+.profile-form input[type="text"],
+.profile-form input[type="number"],
+.profile-form input[type="file"],
+.profile-form select,
+.profile-form textarea {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.profile-form input:focus,
+.profile-form select:focus,
+.profile-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* Labels */
+.profile-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* Genre checkboxes inline */
+.profile-form label input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.profile-form > label,
+.profile-form > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Textarea */
+.profile-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit button */
+.profile-form button[type="submit"] {
+  padding: 10px 14px;
+  background: linear-gradient(180deg, #2563eb, #1e40af);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.profile-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.18);
+}
+
+/* File input spacing */
+input[type="file"] {
+  padding: 4px;
+}
+
+/* Select dropdown */
+select {
+  background-color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20px;
+    padding: 16px;
+  }
+}

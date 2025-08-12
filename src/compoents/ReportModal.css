@@ -1,0 +1,89 @@
+/* ReportModal.css */
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal content */
+.report-form {
+  background: #ffffff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-form h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.report-form textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.report-form textarea:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239,68,68,0.15);
+}
+
+/* Buttons */
+.report-form button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* Primary action */
+.report-form button[type="submit"] {
+  background-color: #ef4444;
+  color: white;
+}
+
+.report-form button[type="submit"]:hover {
+  background-color: #dc2626;
+}
+
+/* Secondary action */
+.report-form button[type="button"] {
+  background-color: #9ca3af;
+  color: white;
+}
+
+.report-form button[type="button"]:hover {
+  background-color: #6b7280;
+}
+
+/* Mobile-friendly */
+@media (max-width: 520px) {
+  .report-form {
+    padding: 15px;
+  }
+}
