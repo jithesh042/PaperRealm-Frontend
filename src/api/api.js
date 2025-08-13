@@ -1,7 +1,8 @@
 import axios from "axios";
 
+
 const api = axios.create({
-  baseURL: process.env.VITE_URL,
+  baseURL: import.meta.env.VITE_URL, // ✅ Vite syntax
 });
 
 api.interceptors.request.use((config) => {
